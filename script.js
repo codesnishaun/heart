@@ -40,15 +40,15 @@ var init = function () {
     };
 
     var glowingText = function (text, x, y, time) {
-        var size = 80 + Math.sin(time) * 15;  
-        ctx.font = size + "px 'Comic Sans MS'";
-        ctx.shadowColor = "rgba(255, 105, 180, 1)";  
-        ctx.shadowBlur = 30;  
+        var size = 80 + Math.sin(time) * 15; 
+        ctx.font = size + "px 'Indie Flower', cursive"; 
+        ctx.shadowColor = "rgba(255, 105, 180, 1)";
+        ctx.shadowBlur = 30;
         ctx.fillStyle = "rgba(255, 255, 255, 1)";
         ctx.textAlign = "center";
         ctx.fillText(text, x, y);
         ctx.shadowBlur = 0;
-    };
+    };    
 
     var heartPosition = function (rad) {
         return [Math.pow(Math.sin(rad), 3), -(15 * Math.cos(rad) - 5 * Math.cos(2 * rad) - 2 * Math.cos(3 * rad) - Math.cos(4 * rad))];
