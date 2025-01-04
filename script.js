@@ -151,7 +151,7 @@ var init = function () {
                 ctx.fillRect(u.trace[k].x, u.trace[k].y, 3, 3); 
             }
         }
-        glowingText("Tangina mo po", width / 2, height / 2, time);
+        glowingText("I love you", width / 2, height / 2, time);
         window.requestAnimationFrame(loop, canvas);
     };
     loop();
